@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 7,
+      length: tabs.length,
       child: Scaffold(
         appBar: MyAppBar().appBar(),
         body: TabBarView(
@@ -179,7 +179,7 @@ var tabs = [
   'Sports',
   'Entertainment',
   'Science',
-  'Health',
+  //'Health',
   'Business'
 ];
 
